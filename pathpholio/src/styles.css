@@ -72,6 +72,12 @@ a {
   font-size: 16px;
 }
 
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
 .table {
   width: 100%;
   border-collapse: collapse;

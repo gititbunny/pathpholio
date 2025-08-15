@@ -15,9 +15,7 @@ export default function Header({ session }) {
       <h2 style={{ fontSize: "22px", color: "var(--accent)" }}>
         Job Application Tracker
       </h2>
-      <p>
-        Track applications, deadlines, and interviews — synced across devices.
-      </p>
+      <p>Keep track of your job applications, deadlines, and interviews.</p>
       {!session ? (
         <Link to="/auth" className="btn" style={{ marginTop: "8px" }}>
           Sign in

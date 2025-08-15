@@ -55,7 +55,7 @@ export default function JobForm({ onSubmit }) {
         <option>Interview</option>
         <option>Offer</option>
       </select>
-      <label>JD URL (optional)</label>
+      <label>Job URL (optional)</label>
       <input
         className="input"
         type="url"
