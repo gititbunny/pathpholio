@@ -8,14 +8,24 @@ export default function Header({ session }) {
         <img
           src="/logo.png"
           alt="Pathpholio Logo"
-          style={{ width: "96px", height: "auto" }}
+          style={{ width: "150px", height: "auto", marginBottom: "0px" }}
         />
       </div>
-      <h1 style={{ fontSize: "40px" }}>Pathpholio</h1>
-      <h2 style={{ fontSize: "22px", color: "var(--accent)" }}>
+      <h1 style={{ fontSize: "50px", marginTop: "5px", marginBottom: "-30px" }}>
+        Pathpholio
+      </h1>
+      <h2
+        style={{
+          fontSize: "30px",
+          marginBottom: "0px",
+          color: "var(--accent)",
+        }}
+      >
         Job Application Tracker
       </h2>
-      <p>Keep track of your job applications, deadlines, and interviews.</p>
+      <p style={{ fontSize: "20px", marginTop: "5px" }}>
+        Keep track of your job applications, deadlines, and interviews.
+      </p>
       {!session ? (
         <Link to="/auth" className="btn" style={{ marginTop: "8px" }}>
           Sign in
