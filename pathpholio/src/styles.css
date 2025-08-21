@@ -30,8 +30,9 @@ a {
   text-decoration: none;
 }
 .container {
-  max-width: 1040px;
+  max-width: 800px;
   margin: 0 auto;
+  padding: 40px 20px;
 }
 
 .card {
