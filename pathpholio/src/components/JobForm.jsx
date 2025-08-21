@@ -5,8 +5,6 @@ export default function JobForm({ onSubmit }) {
   const [company, setCompany] = useState("");
   const [status, setStatus] = useState("Applied");
   const [jdUrl, setJdUrl] = useState("");
-  const [interviewAt, setInterviewAt] = useState("");
-  const [notes, setNotes] = useState("");
 
   function submit(e) {
     e.preventDefault();
@@ -16,19 +14,15 @@ export default function JobForm({ onSubmit }) {
       company: company.trim(),
       status,
       jd_url: jdUrl.trim() || null,
-      interview_at: interviewAt ? new Date(interviewAt).toISOString() : null,
-      notes: notes.trim() || null,
     });
     setTitle("");
     setCompany("");
     setStatus("Applied");
     setJdUrl("");
-    setInterviewAt("");
-    setNotes("");
   }
 
   return (
-    <form onSubmit={submit}>
+    <form onSubmit={submit} className="form">
       <label>Job Title</label>
       <input
         className="input"
@@ -62,21 +56,6 @@ export default function JobForm({ onSubmit }) {
         value={jdUrl}
         onChange={(e) => setJdUrl(e.target.value)}
         placeholder="https://jobs..."
-      />
-      <label>Interview Date (optional)</label>
-      <input
-        className="input"
-        type="datetime-local"
-        value={interviewAt}
-        onChange={(e) => setInterviewAt(e.target.value)}
-      />
-      <label>Notes</label>
-      <textarea
-        className="textarea"
-        rows="3"
-        value={notes}
-        onChange={(e) => setNotes(e.target.value)}
-        placeholder="Key points, recruiter info, etc."
       />
       <button className="btn" type="submit">
         Add Job
