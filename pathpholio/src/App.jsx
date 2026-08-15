@@ -34,7 +34,7 @@ export default function App() {
       <footer style={{ opacity: 0.85, textAlign: "center", marginTop: "16px" }}>
         Built by{" "}
         <a href="https://github.com/gititbunny" target="_blank">
-          Anin Laust
+          Git It Bunny
         </a>
         .
       </footer>
