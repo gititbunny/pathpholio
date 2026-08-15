@@ -33,8 +33,8 @@ export default function App() {
       />
       <footer style={{ opacity: 0.85, textAlign: "center", marginTop: "16px" }}>
         Built by{" "}
-        <a href="https://www.linkedin.com/in/ninankhwashu/" target="_blank">
-          Nina Nkhwashu
+        <a href="https://github.com/gititbunny" target="_blank">
+          Anin Laust
         </a>
         .
       </footer>
