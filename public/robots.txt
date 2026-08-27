@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /app
+Disallow: /auth
+Disallow: /forgot-password
+Disallow: /reset-password
+
+Sitemap: https://pathpholio.netlify.app/sitemap.xml
