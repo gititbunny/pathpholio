@@ -1,0 +1,101 @@
+/* =========================================================
+   PATHPHOLIO GLOBAL STYLES
+   ========================================================= */
+
+:root {
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+
+  background: #0b4650;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* =========================================================
+   TOAST NOTIFICATIONS
+   ========================================================= */
+
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+
+  z-index: 1000;
+}
+
+.toastItem {
+  margin-bottom: 8px;
+  padding: 11px 15px;
+
+  border-radius: 8px;
+
+  background: #146341;
+  color: #ffffff;
+
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+
+  font-size: 0.9rem;
+}
+
+.toastItem.error {
+  background: #963f3f;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+  body {
+    padding: 16px;
+  }
+
+  .toast {
+    top: 12px;
+    right: 12px;
+    left: 12px;
+  }
+
+  .toastItem {
+    width: 100%;
+  }
+}

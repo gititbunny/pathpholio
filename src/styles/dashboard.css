@@ -1,0 +1,659 @@
+/* =========================================================
+   PATHPHOLIO DASHBOARD
+   ========================================================= */
+
+.dashboard-page {
+  min-height: 100vh;
+  background: #f6f7f2;
+  color: #102f33;
+}
+
+.dashboard-page * {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.dashboard-header {
+  width: min(1180px, calc(100% - 48px));
+  min-height: 82px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  border-bottom: 1px solid #d5dfdb;
+}
+
+.dashboard-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #102f33;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.dashboard-brand img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.dashboard-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.dashboard-user-email {
+  color: #64787a;
+  font-size: 0.9rem;
+}
+
+.dashboard-signout {
+  min-height: 42px;
+  padding: 0 18px;
+
+  border: 1px solid #cbd7d3;
+  border-radius: 9px;
+
+  background: transparent;
+  color: #102f33;
+
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.dashboard-signout:hover {
+  border-color: #102f33;
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+.dashboard-main {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 72px 0 100px;
+}
+
+.dashboard-eyebrow {
+  margin: 0 0 14px;
+
+  color: #128f62;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.dashboard-intro {
+  margin-bottom: 44px;
+}
+
+.dashboard-intro h1 {
+  margin: 0;
+
+  color: #102f33;
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.dashboard-intro-text {
+  max-width: 600px;
+  margin: 22px 0 0;
+
+  color: #607477;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   STATISTICS
+   ========================================================= */
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  margin-bottom: 32px;
+
+  border-top: 1px solid #ccd8d4;
+  border-left: 1px solid #ccd8d4;
+}
+
+.dashboard-stat {
+  min-height: 140px;
+  padding: 26px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-right: 1px solid #ccd8d4;
+  border-bottom: 1px solid #ccd8d4;
+}
+
+.dashboard-stat span {
+  color: #697c7e;
+  font-size: 0.88rem;
+}
+
+.dashboard-stat strong {
+  color: #102f33;
+  font-size: 2.6rem;
+  letter-spacing: -0.04em;
+}
+
+
+/* =========================================================
+   PANELS
+   ========================================================= */
+
+.dashboard-panel {
+  margin-top: 28px;
+  padding: 34px;
+
+  background: #ffffff;
+
+  border: 1px solid #d8e1de;
+  border-radius: 18px;
+}
+
+.dashboard-add-panel {
+  background: #102f33;
+  border-color: #102f33;
+}
+
+.dashboard-panel-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 28px;
+
+  margin-bottom: 30px;
+}
+
+.dashboard-panel-heading h2 {
+  margin: 0;
+
+  color: #102f33;
+  font-size: 2rem;
+  letter-spacing: -0.035em;
+}
+
+.dashboard-add-panel .dashboard-eyebrow {
+  color: #2df08b;
+}
+
+.dashboard-add-panel .dashboard-panel-heading h2 {
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   JOB FORM
+   ========================================================= */
+
+.job-form {
+  width: 100%;
+}
+
+.job-form-grid,
+.job-edit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.job-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-field label {
+  margin-bottom: 8px;
+
+  color: #102f33;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.dashboard-add-panel .job-field label {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.job-field input,
+.job-field select {
+  width: 100%;
+  height: 50px;
+  padding: 0 14px;
+
+  border: 1px solid #cad7d3;
+  border-radius: 9px;
+
+  background: #ffffff;
+  color: #102f33;
+
+  font: inherit;
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.job-field input:focus,
+.job-field select:focus {
+  border-color: #19a96f;
+  box-shadow: 0 0 0 3px rgba(25, 169, 111, 0.12);
+}
+
+.job-submit {
+  min-height: 50px;
+  margin-top: 22px;
+  padding: 0 22px;
+
+  border: 0;
+  border-radius: 9px;
+
+  background: #2df08b;
+  color: #102f33;
+
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.job-submit:hover:not(:disabled) {
+  background: #4bf29c;
+  transform: translateY(-1px);
+}
+
+.job-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   FILTERS
+   ========================================================= */
+
+.job-filters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.job-filter-button {
+  min-height: 38px;
+  padding: 0 15px;
+
+  border: 1px solid #ced9d5;
+  border-radius: 999px;
+
+  background: transparent;
+  color: #607477;
+
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.job-filter-button:hover {
+  border-color: #102f33;
+  color: #102f33;
+}
+
+.job-filter-button.active {
+  border-color: #102f33;
+  background: #102f33;
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   JOB LIST
+   ========================================================= */
+
+.job-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-card {
+  padding: 26px 0;
+
+  border-top: 1px solid #dce4e1;
+}
+
+.job-card:last-child {
+  border-bottom: 1px solid #dce4e1;
+}
+
+.job-card-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.job-card-copy {
+  min-width: 0;
+}
+
+.job-card-copy h3 {
+  margin: 14px 0 6px;
+
+  color: #102f33;
+  font-size: 1.25rem;
+}
+
+.job-card-copy p {
+  margin: 0;
+
+  color: #667a7c;
+}
+
+.job-status {
+  display: inline-flex;
+  align-items: center;
+
+  min-height: 28px;
+  padding: 0 10px;
+
+  border-radius: 999px;
+
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.job-status-applied {
+  background: #e7efec;
+  color: #52686a;
+}
+
+.job-status-interview {
+  background: #e2f3ea;
+  color: #13734f;
+}
+
+.job-status-offer {
+  background: #d6f8e5;
+  color: #0d7048;
+}
+
+.job-card-actions,
+.job-edit-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.job-card-actions a,
+.job-card-actions button,
+.job-edit-actions button {
+  min-height: 40px;
+  padding: 0 14px;
+
+  border-radius: 8px;
+
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.job-link-button {
+  display: inline-flex;
+  align-items: center;
+
+  background: #102f33;
+  color: #ffffff;
+  text-decoration: none;
+
+  border: 1px solid #102f33;
+}
+
+.job-edit-button,
+.job-save-button {
+  border: 1px solid #cbd7d3;
+  background: #ffffff;
+  color: #102f33;
+}
+
+.job-delete-button {
+  border: 1px solid #e5caca;
+  background: #fffafa;
+  color: #9a4444;
+}
+
+.job-cancel-button {
+  border: 1px solid #d5dfdb;
+  background: transparent;
+  color: #607477;
+}
+
+.job-edit-form {
+  padding: 6px 0;
+}
+
+.job-edit-actions {
+  margin-top: 20px;
+}
+
+
+/* =========================================================
+   EMPTY / LOADING STATES
+   ========================================================= */
+
+.job-empty-state {
+  padding: 60px 20px;
+  text-align: center;
+
+  border-top: 1px solid #dce4e1;
+  border-bottom: 1px solid #dce4e1;
+}
+
+.job-empty-state h3 {
+  margin: 0 0 8px;
+  color: #102f33;
+}
+
+.job-empty-state p {
+  margin: 0;
+  color: #718385;
+}
+
+.dashboard-loading {
+  padding: 50px 0;
+
+  color: #697c7e;
+  text-align: center;
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+.dashboard-page a:focus-visible,
+.dashboard-page button:focus-visible,
+.dashboard-page input:focus-visible,
+.dashboard-page select:focus-visible {
+  outline: 3px solid #2df08b;
+  outline-offset: 3px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .dashboard-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .dashboard-stat:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .dashboard-panel-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .job-form-grid,
+  .job-edit-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+  .dashboard-header {
+    width: calc(100% - 32px);
+    min-height: 72px;
+  }
+
+  .dashboard-brand img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .dashboard-user-email {
+    display: none;
+  }
+
+  .dashboard-signout {
+    min-height: 38px;
+    padding: 0 13px;
+    font-size: 0.85rem;
+  }
+
+  .dashboard-main {
+    width: calc(100% - 32px);
+    padding: 52px 0 70px;
+  }
+
+  .dashboard-intro {
+    margin-bottom: 34px;
+  }
+
+  .dashboard-intro h1 {
+    font-size: clamp(2.8rem, 15vw, 3.4rem);
+  }
+
+  .dashboard-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .dashboard-stat:last-child {
+    grid-column: auto;
+  }
+
+  .dashboard-stat {
+    min-height: 92px;
+    padding: 18px 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .dashboard-stat span {
+    font-size: 0.72rem;
+    line-height: 1.2;
+  }
+
+  .dashboard-stat strong {
+    font-size: 1.8rem;
+  }
+  .dashboard-panel {
+    padding: 24px 18px;
+    border-radius: 14px;
+  }
+
+  .dashboard-panel-heading h2 {
+    font-size: 1.65rem;
+  }
+
+  .dashboard-applications-heading {
+    margin-bottom: 22px;
+  }
+
+  .job-filters {
+    width: 100%;
+  }
+
+  .job-filter-button {
+    flex: 1;
+  }
+
+  .job-submit {
+    width: 100%;
+  }
+
+  .job-card {
+    padding: 24px 0;
+  }
+
+  .job-card-main {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .job-card-actions {
+    width: 100%;
+  }
+
+  .job-card-actions a,
+  .job-card-actions button {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .job-edit-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .job-edit-actions button {
+    width: 100%;
+  }
+}
