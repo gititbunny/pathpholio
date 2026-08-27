@@ -1,0 +1,103 @@
+/* =========================================================
+   404 PAGE
+   ========================================================= */
+
+.not-found-page {
+  min-height: 100vh;
+  padding: 40px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f6f7f2;
+  color: #102f33;
+}
+
+.not-found-content {
+  width: 100%;
+  max-width: 680px;
+
+  text-align: center;
+}
+
+.not-found-content img {
+  width: 92px;
+  margin-bottom: 28px;
+}
+
+.not-found-code {
+  margin: 0 0 12px;
+
+  color: #19a96f;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+.not-found-content h1 {
+  margin: 0;
+
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.not-found-content > p:not(.not-found-code) {
+  max-width: 500px;
+  margin: 24px auto 0;
+
+  color: #64787a;
+  line-height: 1.7;
+}
+
+.not-found-button {
+  min-height: 50px;
+  margin-top: 32px;
+  padding: 0 24px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #102f33;
+  color: #ffffff;
+
+  text-decoration: none;
+  font-weight: 700;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.not-found-button:hover {
+  background: #19474d;
+  transform: translateY(-2px);
+}
+
+.not-found-button:focus-visible {
+  outline: 3px solid #2df08b;
+  outline-offset: 4px;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .not-found-page {
+    padding: 32px 20px;
+  }
+
+  .not-found-content img {
+    width: 74px;
+  }
+
+  .not-found-button {
+    width: 100%;
+  }
+}
