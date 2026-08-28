@@ -1,6 +1,5 @@
 import { Outlet } from "react-router-dom";
 import { useCallback, useEffect, useState } from "react";
-
 import { supabase } from "./services/supabase.js";
 import Toast from "./components/Toast.jsx";
 
