@@ -2,7 +2,7 @@
 
 A modern job application tracker for organising opportunities, following application progress, and keeping important job-posting links in one place.
 
-**Live Demo:** https://pathpholio.netlify.app
+**Live Demo:** https://pathpholio.netlify.app 
 
 ---
 
