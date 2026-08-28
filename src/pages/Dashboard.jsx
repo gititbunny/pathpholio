@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
 import { useNavigate, useOutletContext } from "react-router-dom";
-
 import Header from "../components/Header.jsx";
 import JobForm from "../components/JobForm.jsx";
 import Filters from "../components/Filters.jsx";
