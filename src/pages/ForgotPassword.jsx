@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
 import { supabase } from "../services/supabase.js";
 import "../styles/auth.css";
 
