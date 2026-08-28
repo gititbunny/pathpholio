@@ -10,7 +10,6 @@ import {
   updateJob,
   deleteJob,
 } from "../services/jobsApi.js";
-
 import "../styles/dashboard.css";
 
 export default function Dashboard() {
